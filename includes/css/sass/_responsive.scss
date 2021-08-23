@@ -1,0 +1,421 @@
+//Medium devices (lanscapes tablets, 768px and up)
+@media only screen and (min-width: 768px) {}
+
+//Large devices (Laptops, Desktops 992px and up)
+@media only screen and (min-width: 992px) {}
+
+//Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {}
+
+
+
+// Extra small devices (phones, 600px and down)
+@media only screen and (max-width:600px) {
+
+    //main text
+    .main {
+        // min-height: 80vh;
+
+        //hero text
+        .hero_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            height: 15rem;
+            padding-top: 10rem;
+
+            h3 {
+                line-height: 4rem !important;
+                font-size: 2.5rem !important;
+            }
+
+            .footer {
+                ul {
+                    gap: 35px;
+                    position: fixed;
+                    bottom: 10px;
+                    left: 35px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 10px !important;
+            }
+        }
+    }
+
+    //sidebar
+    .c-scrollbar {
+        display: none;
+    }
+
+    //cursor
+    .cursor,
+    .cursor-2 {
+        display: none;
+    }
+
+    //indicator
+    .btn-down {
+        display: none;
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 2rem;
+
+            &::after {
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+//Small devices (portrait tablets and large phones, 600px and up)
+@media (min-width: 600px) and (max-width: 768px) {
+
+    //main text
+    .main {
+        // min-height: 80vh;
+
+        //hero text
+        .hero_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            height: 15rem;
+            padding-top: 10rem;
+
+            h3 {
+                line-height: 4rem !important;
+                font-size: 2.5rem !important;
+            }
+
+            .footer {
+                ul {
+                    position: fixed;
+                    bottom: 10px;
+                    left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 0 10px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 10px !important;
+            }
+        }
+    }
+
+    //sidebar
+    .c-scrollbar {
+        display: none;
+    }
+
+    //cursor
+    .cursor,
+    .cursor-2 {
+        display: none !important;
+    }
+
+    //indicator
+    .btn-down {
+        display: none;
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 3rem !important;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 2.9rem;
+
+            &::after {
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+}
+
+
+
+//Smart phones (480px and down)
+@media only screen and (max-width: 480px) {
+
+    //main text
+    .main {
+        // min-height: 80vh;
+
+        //hero text
+        .hero_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            height: 15rem;
+            padding-top: 10rem;
+
+            h3 {
+                line-height: 4rem !important;
+                font-size: 2.5rem !important;
+            }
+
+            .footer {
+                ul {
+                    gap: 35px;
+                    position: fixed;
+                    bottom: 10px;
+                    left: 35px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 10px !important;
+            }
+        }
+    }
+
+    //sidebar
+    .c-scrollbar {
+        display: none;
+    }
+
+    //cursor
+    .cursor,
+    .cursor-2 {
+        display: none !important;
+    }
+
+    //indicator
+    .btn-down {
+        display: none;
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 1.8rem;
+
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+//Smart phones (440px and down)
+@media only screen and (max-width: 440px) {
+
+    //main text
+    .main {
+        // min-height: 80vh;
+
+        //hero text
+        .hero_text {
+            justify-content: start;
+            padding-top: 5rem;
+
+            h3 {
+                line-height: 3.8rem !important;
+                font-size: 2.2rem !important;
+            }
+
+            .footer {
+                ul {
+                    gap: 30px;
+                    bottom: 10px;
+                    left: 30px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 8px !important;
+            }
+        }
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 2.8rem;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 2rem;
+
+            &::after {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+}
+
+//Smart phones (420px and down)
+@media only screen and (max-width: 420px) {
+
+    //main text
+    .main {
+
+        // min-height: 80vh;
+        .header {
+            .navbar {
+                .container {
+                    .navbar_links {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //hero text
+        .hero_text {
+            padding-top: 5rem;
+
+            h3 {
+                line-height: 3.8rem !important;
+                font-size: 2.2rem !important;
+            }
+
+            .footer {
+                ul {
+                    gap: 15px;
+                    bottom: 10px;
+                    left: 18px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 8px !important;
+            }
+        }
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 1.8rem;
+
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+//Smart phones (360px and down)
+@media only screen and (max-width: 360px) {
+
+    //main text
+    .main {
+
+        padding: 40px 50px;
+
+        .header {
+            .navbar {
+                .container {
+                    .navbar-brand {
+                        .logo {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .navbar_links {
+                        a {
+                            font-size: .9rem;
+
+                            &:nth-last-child(1) {
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //hero text
+        .hero_text {
+            padding-top: 4rem;
+
+            h3 {
+                line-height: 3.5rem !important;
+                font-size: 2rem !important;
+            }
+
+            .footer {
+                ul {
+                    gap: 10px;
+                    bottom: 10px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    left: 5px;
+
+                    li {
+                        a {
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+
+            h3:first-child {
+                margin-left: 8px !important;
+            }
+        }
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 1.5rem;
+
+            &::after {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

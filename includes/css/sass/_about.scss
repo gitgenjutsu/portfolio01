@@ -1,0 +1,86 @@
+.about_section {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        content: 'SKILLS';
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        color: white;
+        font-size: 8rem;
+        font-family: 'Black Ops One', 'cursive';
+        transform: translate(-50%, -5%);
+        opacity: .03;
+    }
+
+    .about_parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-auto-rows: max-content;
+        padding-top: 2rem;
+
+        .intro,
+        .myskills {
+            display: grid;
+            grid-template-rows: auto;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .intro {
+            color: transparent;
+            -webkit-text-stroke: 1px #15E587;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 40px;
+            text-align: justify;
+            letter-spacing: 8px;
+            z-index: 5;
+
+            p:first-child {
+                text-align: left;
+                color: #15E587;
+            }
+
+            p:last-child {
+                margin-top: 8px;
+                text-align: right;
+            }
+
+        }
+
+        .myskills {
+            p:first-child {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 40px;
+                text-align: left;
+                letter-spacing: 8px;
+                color: #15E587;
+            }
+
+            .skills_animate {
+                // clip-path: circle(50% at 50% 50%);
+                width: 450px;
+                height: 450px;
+                // background: rgba(0, 0, 0, 0.25);
+                box-shadow: 0 8px 32px 0 #15e58757;
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.18);
+                color: #15E587;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                font-size: 1.1rem;
+                font-family: 'Black Ops One';
+                z-index: 5;
+            }
+        }
+    }
+
+}

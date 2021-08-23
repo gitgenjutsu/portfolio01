@@ -1,0 +1,752 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scrollbar-base-color: yellow;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: #15E587;
+}
+
+::selection {
+  background-color: transparent;
+  color: #15E587;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: 0.5;
+}
+
+li {
+  list-style: none;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100vh;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ECBB9C;
+  opacity: 1;
+  width: 2px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  z-index: 9;
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 1;
+  background-color: rgba(120, 120, 120, 0);
+  border-width: 2px;
+  transform-origin: center;
+}
+
+.cursor-2 {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #15E587;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: 0.11s;
+  opacity: 1;
+  border-width: 0px;
+  background-color: #15E587;
+}
+
+.cursor.link_hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.199);
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  z-index: 9;
+  font-family: "Black Ops One", "cursive";
+}
+.preloader::before {
+  content: "Loading";
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(21, 229, 135, 0.103);
+}
+.preloader .counter {
+  position: relative;
+  font-size: 7.5rem;
+  color: #c6c6c6;
+  z-index: 1;
+  font-family: inherit;
+}
+.preloader .counter::after {
+  content: "%";
+  font-size: 5.5rem;
+}
+
+.preloader.active {
+  transform: translateY(-100vh);
+  transition: ease-in-out 1s;
+  transition-delay: 1s;
+}
+
+.about_section {
+  position: relative;
+  z-index: 2;
+}
+.about_section::before {
+  content: "SKILLS";
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  color: white;
+  font-size: 8rem;
+  font-family: "Black Ops One", "cursive";
+  transform: translate(-50%, -5%);
+  opacity: 0.03;
+}
+.about_section .about_parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  padding-top: 2rem;
+}
+.about_section .about_parent .intro,
+.about_section .about_parent .myskills {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+.about_section .about_parent .intro {
+  color: transparent;
+  -webkit-text-stroke: 1px #15E587;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: justify;
+  letter-spacing: 8px;
+  z-index: 5;
+}
+.about_section .about_parent .intro p:first-child {
+  text-align: left;
+  color: #15E587;
+}
+.about_section .about_parent .intro p:last-child {
+  margin-top: 8px;
+  text-align: right;
+}
+.about_section .about_parent .myskills p:first-child {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  letter-spacing: 8px;
+  color: #15E587;
+}
+.about_section .about_parent .myskills .skills_animate {
+  width: 450px;
+  height: 450px;
+  box-shadow: 0 8px 32px 0 #15e58757;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  color: #15E587;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.1rem;
+  font-family: "Black Ops One";
+  z-index: 5;
+}
+
+.work_section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 86vh;
+  z-index: 3;
+}
+.work_section::before {
+  content: "PORTFOLIO";
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  display: inline-block;
+  transform: rotate(20deg);
+  color: #5b6d65;
+  font-size: 7rem;
+  font-family: "Black Ops One", "cursive";
+  transform: translate(-50%, -5%);
+  opacity: 0.7;
+  overflow: hidden;
+}
+.work_section .left_slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.work_section .left_slide div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: none;
+  color: #fff;
+}
+.work_section .left_slide div h1 {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+}
+.work_section .left_slide div .description {
+  text-align: center;
+  margin-top: 8rem;
+  line-height: 1.4rem;
+}
+.work_section .left_slide div a {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #15E587;
+}
+.work_section .right_slide {
+  position: absolute;
+  height: 100%;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.work_section .right_slide div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.work_section .actions_button button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 4;
+  background-color: #15E587;
+  color: #222;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.9rem;
+  border: none;
+}
+.work_section .actions_button button:hover {
+  color: #fff;
+}
+.work_section .actions_button button:focus {
+  border: none;
+}
+.work_section .actions_button .down_button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.work_section .actions_button .up_button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.work_section .navbar_links a.active::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 2px;
+  background-color: #15E587;
+  color: #15e587;
+}
+
+.main {
+  background-color: #1e1e1e;
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px 50px;
+}
+.main .header {
+  z-index: 5;
+}
+.main .header .navbar .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .header .navbar .container .navbar-brand {
+  text-decoration: none;
+}
+.main .header .navbar .container .navbar-brand .logo {
+  font-family: "Black Ops One", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+.main .header .navbar .container .navbar-brand .logo .green {
+  color: #15E587;
+  font-family: "Black Ops One", cursive;
+}
+.main .header .navbar .container .navbar_links a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  letter-spacing: 3px;
+}
+.main .header .navbar .container .navbar_links a:nth-last-child(1) {
+  margin-left: 2rem;
+}
+.main .header .navbar .container .navbar_links a:hover::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 2px;
+  background-color: #15E587;
+  color: #15e587;
+}
+.main .header .navbar .container .navbar_links a.active::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 2px;
+  background-color: #15E587;
+  color: #15e587;
+}
+.main .hero_text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  padding-top: 10rem;
+  position: relative;
+}
+.main .hero_text .designerText span {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.main .hero_text .designerText span.fade {
+  opacity: 1;
+}
+.main .hero_text .developerText span {
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+.main .hero_text .developerText span.fade {
+  opacity: 1;
+}
+.main .hero_text h3:first-child {
+  margin-left: 50px;
+  font-size: 5.5rem;
+}
+.main .hero_text h3 {
+  font-size: 6rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #15E587;
+  transform: translate3d(0px, 0vh, 0px);
+  text-transform: uppercase;
+  line-height: 0.95;
+  font-style: italic;
+}
+
+.btn-down {
+  position: fixed;
+  bottom: 10%;
+  cursor: pointer;
+  z-index: 2;
+}
+.btn-down .icon-scroll {
+  width: 45px;
+  height: 30px;
+  border: 2px solid #15E587;
+  border-radius: 25px;
+  transition: 0.5s all ease;
+  position: relative;
+}
+.btn-down .icon-scroll::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 5px;
+  background: #fff;
+  transform: translate(-50%, 0%);
+  top: 8px;
+  left: 50%;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+.footer {
+  margin-top: 7.5rem;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 0 1.2vw 0;
+  margin-right: -0.5vw;
+}
+.footer ul li a {
+  color: #15E587;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes scroll {
+  from {
+    left: 10%;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@keyframes scroll {
+  from {
+    left: 10%;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 15rem;
+    padding-top: 10rem;
+  }
+  .main .hero_text h3 {
+    line-height: 4rem !important;
+    font-size: 2.5rem !important;
+  }
+  .main .hero_text .footer ul {
+    gap: 35px;
+    position: fixed;
+    bottom: 10px;
+    left: 35px;
+  }
+  .main .hero_text h3:first-child {
+    margin-left: 10px !important;
+  }
+
+  .c-scrollbar {
+    display: none;
+  }
+
+  .cursor,
+.cursor-2 {
+    display: none;
+  }
+
+  .btn-down {
+    display: none;
+  }
+
+  .preloader::before {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .preloader .counter {
+    font-size: 2rem;
+  }
+  .preloader .counter::after {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .main .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 15rem;
+    padding-top: 10rem;
+  }
+  .main .hero_text h3 {
+    line-height: 4rem !important;
+    font-size: 2.5rem !important;
+  }
+  .main .hero_text .footer ul {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .main .hero_text h3:first-child {
+    margin-left: 10px !important;
+  }
+
+  .c-scrollbar {
+    display: none;
+  }
+
+  .cursor,
+.cursor-2 {
+    display: none !important;
+  }
+
+  .btn-down {
+    display: none;
+  }
+
+  .preloader::before {
+    font-size: 3rem !important;
+    font-weight: 400;
+  }
+  .preloader .counter {
+    font-size: 2.9rem;
+  }
+  .preloader .counter::after {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 15rem;
+    padding-top: 10rem;
+  }
+  .main .hero_text h3 {
+    line-height: 4rem !important;
+    font-size: 2.5rem !important;
+  }
+  .main .hero_text .footer ul {
+    gap: 35px;
+    position: fixed;
+    bottom: 10px;
+    left: 35px;
+  }
+  .main .hero_text h3:first-child {
+    margin-left: 10px !important;
+  }
+
+  .c-scrollbar {
+    display: none;
+  }
+
+  .cursor,
+.cursor-2 {
+    display: none !important;
+  }
+
+  .btn-down {
+    display: none;
+  }
+
+  .preloader::before {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .preloader .counter {
+    font-size: 1.8rem;
+  }
+  .preloader .counter::after {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .main .hero_text {
+    justify-content: start;
+    padding-top: 5rem;
+  }
+  .main .hero_text h3 {
+    line-height: 3.8rem !important;
+    font-size: 2.2rem !important;
+  }
+  .main .hero_text .footer ul {
+    gap: 30px;
+    bottom: 10px;
+    left: 30px;
+  }
+  .main .hero_text h3:first-child {
+    margin-left: 8px !important;
+  }
+
+  .preloader::before {
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+  .preloader .counter {
+    font-size: 2rem;
+  }
+  .preloader .counter::after {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main .header .navbar .container .navbar_links a {
+    font-size: 1rem;
+  }
+  .main .hero_text {
+    padding-top: 5rem;
+  }
+  .main .hero_text h3 {
+    line-height: 3.8rem !important;
+    font-size: 2.2rem !important;
+  }
+  .main .hero_text .footer ul {
+    gap: 15px;
+    bottom: 10px;
+    left: 18px;
+  }
+  .main .hero_text h3:first-child {
+    margin-left: 8px !important;
+  }
+
+  .preloader::before {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .preloader .counter {
+    font-size: 1.8rem;
+  }
+  .preloader .counter::after {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .main {
+    padding: 40px 50px;
+  }
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 1.2rem;
+  }
+  .main .header .navbar .container .navbar_links a {
+    font-size: 0.9rem;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .hero_text {
+    padding-top: 4rem;
+  }
+  .main .hero_text h3 {
+    line-height: 3.5rem !important;
+    font-size: 2rem !important;
+  }
+  .main .hero_text .footer ul {
+    gap: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    left: 5px;
+  }
+  .main .hero_text .footer ul li a {
+    font-size: 0.9rem;
+  }
+  .main .hero_text h3:first-child {
+    margin-left: 8px !important;
+  }
+
+  .preloader::before {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .preloader .counter {
+    font-size: 1.5rem;
+  }
+  .preloader .counter::after {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=main.css.map */

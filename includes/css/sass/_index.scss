@@ -1,0 +1,195 @@
+.main {
+    background-color: #1e1e1e;
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px 50px;
+
+    .header {
+        z-index: 5;
+
+        .navbar {
+            .container {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .navbar-brand {
+                    text-decoration: none;
+
+                    .logo {
+                        font-family: 'Black Ops One', cursive;
+                        font-size: 1.8rem;
+                        color: #fff;
+                        text-decoration: none;
+
+                        .green {
+                            color: #15E587;
+                            font-family: 'Black Ops One', cursive;
+                        }
+                    }
+                }
+
+                .navbar_links {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        position: relative;
+                        letter-spacing: 3px;
+
+                        &:nth-last-child(1) {
+                            margin-left: 2rem;
+                        }
+
+                        &:hover::before {
+                            content: '';
+                            position: absolute;
+                            top: 20px;
+                            width: 50px;
+                            height: 2px;
+                            background-color: #15E587;
+                            color: #15e587;
+                        }
+
+                        &.active {
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 20px;
+                                width: 50px;
+                                height: 2px;
+                                background-color: #15E587;
+                                color: #15e587;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .hero_text {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 15rem;
+        padding-top: 10rem;
+        position: relative;
+
+        .designerText {
+            span {
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+
+            span.fade {
+                opacity: 1;
+            }
+        }
+
+        .developerText {
+            span {
+                opacity: 0;
+                transition: all .7s ease;
+            }
+
+            span.fade {
+                opacity: 1;
+            }
+        }
+
+
+
+        h3:first-child {
+            margin-left: 50px;
+            font-size: 5.5rem;
+        }
+
+        h3 {
+            font-size: 6rem;
+            color: transparent;
+            -webkit-text-stroke: 1px #15E587;
+            transform: translate3d(0px, 0vh, 0px);
+            text-transform: uppercase;
+            line-height: 0.95;
+            font-style: italic;
+        }
+
+    }
+
+
+
+}
+
+// scroll button
+.btn-down {
+    position: fixed;
+    bottom: 10%;
+    cursor: pointer;
+    z-index: 2;
+
+    .icon-scroll {
+        width: 45px;
+        height: 30px;
+        border: 2px solid #15E587;
+        border-radius: 25px;
+        -webkit-transition: .5s all ease;
+        -o-transition: .5s all ease;
+        transition: .5s all ease;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 5px;
+            background: #fff;
+            transform: translate(-50%, 0%);
+            top: 8px;
+            left: 50%;
+            border-radius: 4px;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-name: scroll;
+        }
+    }
+}
+
+
+.footer {
+    margin-top: 7.5rem;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 3vw 0 1.2vw 0;
+        margin-right: -0.5vw;
+
+        li {
+            a {
+                color: #15E587;
+                font-size: 1rem;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    from {
+        left: 10%;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}

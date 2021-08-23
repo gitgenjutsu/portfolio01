@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="includes/css/sass/main.css">
+
+    <title>👨‍💻Web Developer | Mohd Wasim </title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="includes/js/globe.js"></script>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div>
+    <!-- cursor -->
+    <div class="cursor "></div>
+    <div class="cursor-2"></div>
+    <section class="main" id="main">
+        <div class="row">
+            <header class="header">
+                <nav class="navbar">
+                    <div class="container text-uppercase pt-4">
+                        <a class="navbar-brand navLinks" href="javascript:void(0);" onclick="show_index()">
+                            <span class="logo">was<span class="green">!</span>m</span>
+                            <!-- <img src="img/logo.png" alt="logo" class="logo"> -->
+                        </a>
+                        <div class="navbar_links">
+                            <a href="javascript:void(0);" class="about_menu navLinks" onclick="show_about()">About</a>
+                            <a href="javascript:void(0);" class="work_menu navLinks" onclick="show_work()">Work</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- header ends -->
+
+
+            <!-- body starts -->
+
+            <!-- index -->
+            <section class="hero_text" id="hero_text">
+                <div class="heroText" id="target">
+                    <h3 class="designerText">Designer by Day</h3>
+                    <h3 class="developerText">Developer by Night</h3>
+                </div>
+                <div class="image" style="display: none;">
+                    <img src="includes/img/profile-pic.png" alt="profile" class="myProfile" width="200">
+                </div>
+                <footer class="footer">
+                    <ul>
+                        <li><a href="mailto:wasimraja@live.com" target="_blank" class="navLinks"
+                                rel="noopener">Email</a></li>
+                        <li><a href="https://github.com/spideyhere/" target="_blank" class="navLinks"
+                                rel="noopener">GitHub</a></li>
+                        <li><a href="https://wa.me/919716689303" target="_blank" class="navLinks"
+                                rel="noopener">WhatsApp</a></li>
+                        <li><a href="https://www.instagram.com/mohd__wasim/" target="_blank" class="navLinks"
+                                rel="noopener">Instagram</a>
+                        </li>
+                    </ul>
+                </footer>
+            </section>
+
+
+            <!-- about -->
+            <section class="about_section" id="about_section" style="display: none;">
+                <div class="about_parent">
+                    <div class="intro">
+                        <p>👋 Hey, I'm Mohd Wasim.</p>
+                        <p>A Web Designer, located in Badarpur, New Delhi. I have passion for creating interactive and
+                            dynamic user experience websites. Pursuing a fullstack web development course from <a
+                                href="https://www.admecindia.co.in/" class="navLinks" target="blank">Admec.</a></p>
+                        <p>Somewhat experience of working in a company with the team of developers as a web designer,
+                            currently learning Wordpress and doing freelancing as a web designer.</p>
+                    </div>
+                    <div class="myskills">
+
+                        <div class="skills_animate" id="globe">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- work section -->
+            <section class="work_section" style="display:none;">
+                <div class="left_slide">
+                    <div>
+                        <h1>Responsive Portfolio</h1>
+                        <p>Javascript & jQuery</p>
+                        <p class="description">Responsive portfolio website, this website contains the dark/light theme
+                            toggle and random colors features. It have my mini projects which i made with js and jquery.
+                        </p>
+                        <a href="https://spideyhere.github.io/responsive-portfolio/" class="navLinks"
+                            target="blank">Visit Website <i class="fas fa-eye"></i> </a>
+                    </div>
+                    <div>
+                        <h1>Feedback App</h1>
+                        <p>ReactJs & Firebase</p>
+                        <p class="description">Students feedback app in react js with firebase. Students can submit
+                            their feedback for their particualr subjects or mentors without need of login/signup</p>
+                        <a href="https://github.com/spideyhere/feedback-app" class="navLinks" target="blank">View GitHub
+                            <i class="fab fa-github"></i> </a>
+                    </div>
+                    <!-- first tab -->
+                    <div>
+                        <h1>Jevelin E-Commerce</h1>
+                        <p>PHP & MySql</p>
+                        <p class="description">Jevelin is a PHP based e-commerce website, user can visit and view all
+                            the products and even add the products to the cart without need of login.</p>
+                        <a href="https://github.com/spideyhere/jevelin" class="navLinks" target="blank">View GitHub <i
+                                class="fab fa-github"></i> </a>
+                    </div>
+                </div>
+                <div class="right_slide">
+                    <!-- first img -->
+                    <div style="background-image: url('includes/img/jevelin.jpeg');"></div>
+                    <div style="background-image: url('includes/img/reactjs.png');"></div>
+                    <!-- <div style="background-image: url('includes/img/portfolio.jpeg');"></div> -->
+                    <div>
+                        <!-- <iframe style="width:100%;height:100%;" src="includes/video/portfolio.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <video style="width:100%;height:100%;" autoplay muted loop preload>
+                            <source src="includes/video/portfolio.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="actions_button">
+                    <button class="down_button">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button class="up_button">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </section>
+
+            <div id="scroll-down" class="btn-down cursor-hide">
+                <div class="icon-scroll"></div>
+            </div>
+            <!-- scroll  -->
+
+            <!-- header part from include -->
+        </div>
+
+    </section>
+    <!-- body ends -->
+
+    <!-- footer starts -->
+    <span class="c-scrollbar"><span class="c-scrollbar_thumb"
+            style="height: 139.167px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></span></span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='includes/js/jquery.svg3dtagcloud.min.js'></script>
+    <script src="includes/js/main.js"></script>
+    <script src="//code.tidio.co/li6slmi9vlsnk5w4x1jdth4y8829pkmi.js" async></script>
+</body>
+
+</html>
