@@ -508,7 +508,7 @@ li {
     opacity: 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .main .hero_text {
     display: flex;
     flex-direction: column;
@@ -709,7 +709,7 @@ li {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
   .main {
     padding: 40px 50px;
   }
