@@ -689,27 +689,30 @@ li {
     padding-top: 5rem;
   }
   .main .hero_text h3 {
-    line-height: 6.5rem !important;
-    font-size: 3.5rem !important;
+    line-height: 6rem !important;
+    font-size: 3.3rem !important;
   }
   .main .hero_text .footer ul {
     gap: 15px;
     bottom: 10px;
     left: 18px;
   }
+  .main .hero_text .footer ul li a {
+    font-size: 1.1rem;
+  }
   .main .hero_text h3:first-child {
     margin-left: 8px !important;
   }
 
   .preloader::before {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 400;
   }
   .preloader .counter {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .preloader .counter::after {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 320px) {
