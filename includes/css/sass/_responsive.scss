@@ -1,11 +1,141 @@
-//Medium devices (lanscapes tablets, 768px and up)
-@media only screen and (min-width: 768px) {}
-
-//Large devices (Laptops, Desktops 992px and up)
-@media only screen and (min-width: 992px) {}
-
 //Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {}
+
+//Large devices (Laptops, Desktops 992px and up)
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    //main text
+    .main {
+
+        //hero text
+        .hero_text {
+
+            h3 {
+                line-height: 7rem !important;
+                font-size: 4.8rem !important;
+            }
+
+            .footer {
+                ul {
+                    position: fixed;
+                    bottom: 10px;
+                    left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 0 35px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 10px !important;
+            }
+        }
+    }
+
+    //sidebar
+    .c-scrollbar {
+        display: none;
+    }
+
+    //cursor
+    .cursor,
+    .cursor-2 {
+        display: none !important;
+    }
+
+    //indicator
+    .btn-down {
+        display: none;
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 3rem !important;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 2.9rem;
+
+            &::after {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+
+//Medium devices (lanscapes tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 992px) {
+
+    //main text
+    .main {
+
+        //hero text
+        .hero_text {
+
+            h3 {
+                line-height: 6.8rem !important;
+                font-size: 4.5rem !important;
+            }
+
+            .footer {
+                ul {
+                    position: fixed;
+                    bottom: 10px;
+                    left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 0 30px;
+                }
+            }
+
+            h3:first-child {
+                margin-left: 10px !important;
+            }
+        }
+    }
+
+    //sidebar
+    .c-scrollbar {
+        display: none;
+    }
+
+    //cursor
+    .cursor,
+    .cursor-2 {
+        display: none !important;
+    }
+
+    //indicator
+    .btn-down {
+        display: none;
+    }
+
+    //preloader
+    .preloader {
+
+        &::before {
+            font-size: 3rem !important;
+            font-weight: 400;
+        }
+
+        //counter
+        .counter {
+            font-size: 2.9rem;
+
+            &::after {
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+}
 
 
 
@@ -95,8 +225,8 @@
             padding-top: 10rem;
 
             h3 {
-                line-height: 4rem !important;
-                font-size: 2.5rem !important;
+                line-height: 4.8rem !important;
+                font-size: 4.5rem !important;
             }
 
             .footer {
