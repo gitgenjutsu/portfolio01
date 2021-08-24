@@ -302,8 +302,8 @@
             padding-top: 5rem;
 
             h3 {
-                line-height: 6.5rem !important;
-                font-size: 3.5rem !important;
+                line-height: 6rem !important;
+                font-size: 3.3rem !important;
             }
 
             .footer {
@@ -311,6 +311,12 @@
                     gap: 15px;
                     bottom: 10px;
                     left: 18px;
+
+                    li {
+                        a {
+                            font-size: 1.1rem;
+                        }
+                    }
                 }
             }
 
@@ -324,16 +330,16 @@
     .preloader {
 
         &::before {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             font-weight: 400;
         }
 
         //counter
         .counter {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
 
             &::after {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
         }
     }
