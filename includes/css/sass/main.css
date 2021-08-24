@@ -709,9 +709,9 @@ li {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   .main {
-    padding: 40px 50px;
+    padding: 40px 20px;
   }
   .main .header .navbar .container .navbar-brand .logo {
     font-size: 1.2rem;
@@ -726,8 +726,8 @@ li {
     padding-top: 4rem;
   }
   .main .hero_text h3 {
-    line-height: 3.5rem !important;
-    font-size: 2rem !important;
+    line-height: 4.8rem !important;
+    font-size: 2.7rem !important;
   }
   .main .hero_text .footer ul {
     gap: 10px;
