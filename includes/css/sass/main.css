@@ -799,7 +799,7 @@ li {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 320px) {
+@media screen and (max-width: 380px) {
   .main {
     padding: 40px 20px;
   }
