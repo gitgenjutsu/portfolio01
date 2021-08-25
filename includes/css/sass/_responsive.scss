@@ -360,7 +360,7 @@
 
     //main text
     .main {
-        // min-height: 80vh;
+        padding: 40px 20px;
 
         //hero text
         .hero_text {
@@ -384,6 +384,56 @@
                 margin-left: 8px !important;
             }
         }
+    }
+
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 5rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 350px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 330px;
+                            height: 430px;
+                        }
+
+                        a {
+                            text {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     //preloader
@@ -456,6 +506,57 @@
         }
     }
 
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 4rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: .9rem;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 350px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 330px;
+                            height: 430px;
+                        }
+
+                        a {
+                            text {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
     //preloader
     .preloader {
 
@@ -475,8 +576,8 @@
     }
 }
 
-//Smart phones (380px and down)
-@media (max-width: 380px) {
+//Smart phones (360px and down)
+@media screen and (max-width: 380px) {
 
     //main text
     .main {
@@ -537,6 +638,58 @@
             }
         }
     }
+
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 4rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: .9rem;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 250px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 180px;
+                            height: 280px;
+                        }
+
+                        a {
+                            text {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
 
     //preloader
     .preloader {
