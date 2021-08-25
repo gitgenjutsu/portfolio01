@@ -802,7 +802,7 @@ li {
     font-size: 1.8rem;
   }
 }
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 380px) and (max-width: 420px) {
   .main {
     padding: 40px 20px;
   }
@@ -926,15 +926,15 @@ li {
     text-align: left;
   }
   .about_section .about_parent .myskills .skills_animate {
-    width: 250px;
+    width: 320px;
     height: 480px;
   }
   .about_section .about_parent .myskills .skills_animate svg {
     height: 430px;
   }
   .about_section .about_parent .myskills .skills_animate svg rect {
-    width: 180px;
-    height: 280px;
+    width: 320px;
+    height: 430px;
   }
   .about_section .about_parent .myskills .skills_animate svg a text {
     font-size: 0.9rem;
