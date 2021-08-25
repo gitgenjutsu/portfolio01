@@ -320,6 +320,8 @@
         }
     }
 
+
+
     //sidebar
     .c-scrollbar {
         display: none;
@@ -457,7 +459,7 @@
 }
 
 //Smart phones (420px and down)
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 380px) and (max-width: 420px) {
 
     //main text
     .main {
@@ -666,15 +668,15 @@
 
             .myskills {
                 .skills_animate {
-                    width: 250px;
+                    width: 320px;
                     height: 480px;
 
                     svg {
                         height: 430px;
 
                         rect {
-                            width: 180px;
-                            height: 280px;
+                            width: 320px;
+                            height: 430px;
                         }
 
                         a {
