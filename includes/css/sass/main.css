@@ -791,6 +791,10 @@ li {
     font-size: 0.9rem;
   }
 
+  .btn-down {
+    display: none !important;
+  }
+
   .preloader::before {
     font-size: 2.8rem;
     font-weight: 400;
@@ -859,6 +863,10 @@ li {
   }
   .about_section .about_parent .myskills .skills_animate svg a text {
     font-size: 0.9rem;
+  }
+
+  .btn-down {
+    display: none !important;
   }
 
   .preloader::before {
@@ -938,6 +946,10 @@ li {
   }
   .about_section .about_parent .myskills .skills_animate svg a text {
     font-size: 0.9rem;
+  }
+
+  .btn-down {
+    display: none !important;
   }
 
   .preloader::before {
