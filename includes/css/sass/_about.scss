@@ -11,7 +11,7 @@
         font-size: 8rem;
         font-family: 'Black Ops One', 'cursive';
         transform: translate(-50%, -5%);
-        opacity: .03;
+        opacity: .07;
     }
 
     .about_parent {
@@ -32,21 +32,38 @@
         .intro {
             color: transparent;
             -webkit-text-stroke: 1px #15E587;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             line-height: 40px;
             text-align: justify;
             letter-spacing: 8px;
             z-index: 5;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+
+
+            .underline {
+                text-decoration-line: underline;
+                text-decoration-style: "solid";
+                text-decoration-color: rgba(21, 229, 135, 0.88);
+                text-decoration-thickness: 4px;
+            }
 
             p:first-child {
                 text-align: left;
+            }
+
+            .myName {
                 color: #15E587;
             }
 
             p:last-child {
                 margin-top: 8px;
-                text-align: right;
+                text-align: left;
+
             }
 
         }
@@ -66,7 +83,7 @@
                 width: 450px;
                 height: 450px;
                 // background: rgba(0, 0, 0, 0.25);
-                box-shadow: 0 8px 32px 0 #15e58757;
+                box-shadow: 0 8px 32px 0 #14ff2b;
                 backdrop-filter: blur(10px);
                 border-radius: 10px;
                 border: 1px solid rgba(0, 0, 0, 0.18);

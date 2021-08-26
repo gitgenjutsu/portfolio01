@@ -16,12 +16,12 @@ html {
 
 ::-moz-selection {
   background-color: transparent;
-  color: #15E587;
+  color: #14ff2bd2;
 }
 
 ::selection {
   background-color: transparent;
-  color: #15E587;
+  color: #14ff2bd2;
 }
 
 a {
@@ -154,7 +154,7 @@ li {
   font-size: 8rem;
   font-family: "Black Ops One", "cursive";
   transform: translate(-50%, -5%);
-  opacity: 0.03;
+  opacity: 0.07;
 }
 .about_section .about_parent {
   display: grid;
@@ -182,6 +182,19 @@ li {
   z-index: 5;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.about_section .about_parent .intro .underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: "solid";
+          text-decoration-style: "solid";
+  -webkit-text-decoration-color: rgba(21, 229, 135, 0.88);
+          text-decoration-color: rgba(21, 229, 135, 0.88);
+  text-decoration-thickness: 4px;
 }
 .about_section .about_parent .intro p:first-child {
   text-align: left;
@@ -204,7 +217,7 @@ li {
 .about_section .about_parent .myskills .skills_animate {
   width: 450px;
   height: 450px;
-  box-shadow: 0 8px 32px 0 #15e58757;
+  box-shadow: 0 8px 32px 0 #14ff2b;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -226,6 +239,7 @@ li {
   width: 100%;
   height: 86vh;
   z-index: 3;
+  margin-top: 5px;
 }
 .work_section::before {
   content: "PORTFOLIO";
@@ -345,7 +359,8 @@ li {
 }
 
 .main {
-  background-color: #1e1e1e;
+  background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #15E587 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+  background-blend-mode: overlay, hard-light, normal;
   width: 100%;
   min-height: 100vh;
   padding: 25px 50px;
@@ -367,6 +382,7 @@ li {
   font-size: 1.8rem;
   color: #fff;
   text-decoration: none;
+  text-shadow: 0 2px 2px #010000;
 }
 .main .header .navbar .container .navbar-brand .logo .green {
   color: #15E587;
@@ -387,8 +403,8 @@ li {
   top: 20px;
   width: 50px;
   height: 2px;
-  background-color: #15E587;
-  color: #15e587;
+  background-color: #013100;
+  color: #001800;
 }
 .main .header .navbar .container .navbar_links a.active::before {
   content: "";
@@ -414,12 +430,32 @@ li {
 .main .hero_text .designerText span.fade {
   opacity: 1;
 }
+.main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+  color: #14ff2bd2;
+}
 .main .hero_text .developerText span {
   opacity: 0;
   transition: all 0.7s ease;
 }
 .main .hero_text .developerText span.fade {
   opacity: 1;
+}
+.main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+  color: #14ff2bd2;
 }
 .main .hero_text h3:first-child {
   margin-left: 50px;
@@ -513,9 +549,57 @@ li {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 7rem !important;
     font-size: 4.8rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
     position: fixed;
@@ -540,7 +624,7 @@ li {
   }
 
   .btn-down {
-    display: none;
+    display: none !important;
   }
 
   .preloader::before {
@@ -555,9 +639,80 @@ li {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 2.2rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
+  }
+  .main .header .navbar .container .navbar_links a {
+    font-size: 1.4rem;
+    color: #001800;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
+    top: 35px;
+    width: 70px;
+  }
+  .main .hero_text {
+    padding-top: 2rem;
+  }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 6.8rem !important;
     font-size: 4.5rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
     position: fixed;
@@ -586,12 +741,19 @@ li {
     line-height: 40px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
-    text-align: justify;
+  .about_section .about_parent .intro p {
+    text-align: left;
+    letter-spacing: 4px;
   }
-  .about_section .about_parent .intro .rightText p {
-    text-align: justify;
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 600px;
@@ -618,7 +780,7 @@ li {
   }
 
   .btn-down {
-    display: none;
+    display: none !important;
   }
 
   .preloader::before {
@@ -633,6 +795,29 @@ li {
   }
 }
 @media (max-width: 600px) {
+  .main {
+    padding: 40px 20px;
+  }
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 1.9rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
+  }
+  .main .header .navbar .container .navbar_links a {
+    font-size: 1.1rem;
+    color: #001800;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
+    top: 25px;
+    width: 70px;
+  }
   .main .hero_text {
     display: flex;
     flex-direction: column;
@@ -640,15 +825,63 @@ li {
     height: 15rem;
     padding-top: 10rem;
   }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 4rem !important;
     font-size: 2.5rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
-    gap: 35px;
+    gap: 60px;
     position: fixed;
     bottom: 10px;
-    left: 35px;
+    left: 20px;
   }
   .main .hero_text h3:first-child {
     margin-left: 10px !important;
@@ -668,12 +901,19 @@ li {
     line-height: 30px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
-    text-align: justify;
+  .about_section .about_parent .intro p {
+    text-align: left;
+    letter-spacing: 4px;
   }
-  .about_section .about_parent .intro .rightText p {
-    text-align: justify;
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 410px;
@@ -700,7 +940,7 @@ li {
   }
 
   .btn-down {
-    display: none;
+    display: none !important;
   }
 
   .preloader::before {
@@ -715,6 +955,26 @@ li {
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 2.2rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
+  }
+  .main .header .navbar .container .navbar_links a {
+    font-size: 1.4rem;
+    color: #001800;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
+    top: 35px;
+    width: 70px;
+  }
   .main .hero_text {
     display: flex;
     flex-direction: column;
@@ -722,9 +982,57 @@ li {
     height: 15rem;
     padding-top: 10rem;
   }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 4.8rem !important;
     font-size: 4.5rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
     position: fixed;
@@ -753,12 +1061,19 @@ li {
     line-height: 30px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
-    text-align: justify;
+  .about_section .about_parent .intro p {
+    text-align: left;
+    letter-spacing: 4px;
   }
-  .about_section .about_parent .intro .rightText p {
-    text-align: justify;
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 450px;
@@ -785,7 +1100,7 @@ li {
   }
 
   .btn-down {
-    display: none;
+    display: none !important;
   }
 
   .preloader::before {
@@ -803,6 +1118,24 @@ li {
   .main {
     padding: 40px 20px;
   }
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 1.8rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
+  }
+  .main .header .navbar .container .navbar_links a {
+    font-size: 1.1rem;
+    color: #001800;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
+  }
   .main .hero_text {
     display: flex;
     flex-direction: column;
@@ -810,12 +1143,60 @@ li {
     height: 15rem;
     padding-top: 10rem;
   }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 4rem !important;
     font-size: 2.5rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
-    gap: 35px;
+    gap: 40px;
     position: fixed;
     bottom: 10px;
     left: 35px;
@@ -838,12 +1219,19 @@ li {
     line-height: 30px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
-    text-align: justify;
+  .about_section .about_parent .intro p {
+    text-align: left;
+    letter-spacing: 4px;
   }
-  .about_section .about_parent .intro .rightText p {
-    text-align: justify;
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 350px;
@@ -870,7 +1258,7 @@ li {
   }
 
   .btn-down {
-    display: none;
+    display: none !important;
   }
 
   .preloader::before {
@@ -888,13 +1276,79 @@ li {
   .main {
     padding: 40px 20px;
   }
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 1.6rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
+  }
+  .main .header .navbar .container .navbar_links a {
+    font-size: 1.1rem;
+    color: #001800;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
+  }
   .main .hero_text {
     justify-content: start;
     padding-top: 5rem;
   }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 3.8rem !important;
     font-size: 2.2rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
     gap: 30px;
@@ -919,12 +1373,19 @@ li {
     line-height: 30px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
-    text-align: justify;
+  .about_section .about_parent .intro p {
+    text-align: left;
+    letter-spacing: 4px;
   }
-  .about_section .about_parent .intro .rightText p {
-    text-align: justify;
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 350px;
@@ -960,18 +1421,81 @@ li {
   .main {
     padding: 40px 20px;
   }
+  .main .header .navbar .container .navbar-brand .logo {
+    font-size: 1.4rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
+  }
   .main .header .navbar .container .navbar_links a {
     font-size: 1rem;
+    color: #001800;
+  }
+  .main .header .navbar .container .navbar_links a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
   }
   .main .hero_text {
     padding-top: 5rem;
   }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
+  }
   .main .hero_text h3 {
     line-height: 6rem !important;
     font-size: 3.3rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
-    gap: 15px;
+    gap: 13px;
     bottom: 10px;
     left: 18px;
   }
@@ -991,17 +1515,24 @@ li {
     grid-template-columns: repeat(1, 1fr);
   }
   .about_section .about_parent .intro {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
-    text-align: justify;
+  .about_section .about_parent .intro p {
+    text-align: left;
+    letter-spacing: 4px;
   }
-  .about_section .about_parent .intro .rightText p {
-    text-align: justify;
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 350px;
@@ -1039,19 +1570,76 @@ li {
   }
   .main .header .navbar .container .navbar-brand .logo {
     font-size: 1.2rem;
+    color: #013100;
+  }
+  .main .header .navbar .container .navbar-brand .logo .green {
+    color: #FFF;
   }
   .main .header .navbar .container .navbar_links a {
     font-size: 0.9rem;
+    color: #001800;
   }
   .main .header .navbar .container .navbar_links a:nth-last-child(1) {
     margin-left: 1rem;
   }
+  .main .header .navbar .container .navbar_links a.active::before {
+    background-color: #013100;
+    color: #001800;
+  }
   .main .hero_text {
     padding-top: 4rem;
+  }
+  .main .hero_text .designerText span {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .main .hero_text .designerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .designerText span:nth-child(7),
+.main .hero_text .designerText span:nth-child(8),
+.main .hero_text .designerText span:nth-child(9),
+.main .hero_text .designerText span:nth-child(10),
+.main .hero_text .designerText span:nth-child(11),
+.main .hero_text .designerText span:nth-child(12),
+.main .hero_text .designerText span:nth-child(13),
+.main .hero_text .designerText span:nth-child(14),
+.main .hero_text .designerText span:nth-child(15) {
+    color: #14ff2bd2;
+  }
+  .main .hero_text .developerText span {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .main .hero_text .developerText span.fade {
+    opacity: 1;
+  }
+  .main .hero_text .developerText span:nth-child(1),
+.main .hero_text .developerText span:nth-child(2),
+.main .hero_text .developerText span:nth-child(3),
+.main .hero_text .developerText span:nth-child(4),
+.main .hero_text .developerText span:nth-child(5),
+.main .hero_text .developerText span:nth-child(6),
+.main .hero_text .developerText span:nth-child(7) {
+    color: transparent;
+  }
+  .main .hero_text .developerText span:nth-child(8),
+.main .hero_text .developerText span:nth-child(9),
+.main .hero_text .developerText span:nth-child(10),
+.main .hero_text .developerText span:nth-child(11),
+.main .hero_text .developerText span:nth-child(12),
+.main .hero_text .developerText span:nth-child(13),
+.main .hero_text .developerText span:nth-child(14),
+.main .hero_text .developerText span:nth-child(15),
+.main .hero_text .developerText span:nth-child(16),
+.main .hero_text .developerText span:nth-child(17),
+.main .hero_text .developerText span:nth-child(18) {
+    color: #14ff2bd2;
   }
   .main .hero_text h3 {
     line-height: 4.8rem !important;
     font-size: 2.7rem !important;
+    text-shadow: 0 2px 2px #010000;
   }
   .main .hero_text .footer ul {
     gap: 10px;
@@ -1082,9 +1670,19 @@ li {
     line-height: 30px;
     letter-spacing: 5.5px;
     margin-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 2px #010000;
+    color: #15E587;
   }
-  .about_section .about_parent .intro .leftText p:last-child {
+  .about_section .about_parent .intro p {
     text-align: left;
+    letter-spacing: 4px;
+  }
+  .about_section .about_parent .intro .leftText {
+    padding: 6px;
+  }
+  .about_section .about_parent .intro .rightText {
+    padding: 6px;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 280px;
@@ -1099,6 +1697,118 @@ li {
   }
   .about_section .about_parent .myskills .skills_animate svg a text {
     font-size: 0.9rem;
+  }
+
+  .work_section {
+    height: 100vh;
+    margin-top: 15px;
+  }
+  .work_section::before {
+    content: "PORTFOLIO";
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    display: inline-block;
+    transform: rotate(20deg);
+    color: #5b6d65;
+    font-size: 7rem;
+    font-family: "Black Ops One", "cursive";
+    transform: translate(-50%, -5%);
+    opacity: 0.7;
+    overflow: hidden;
+  }
+  .work_section .left_slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  .work_section .left_slide div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(12.5px);
+            backdrop-filter: blur(12.5px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-right: none;
+    color: #fff;
+  }
+  .work_section .left_slide div h1 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+  }
+  .work_section .left_slide div .description {
+    text-align: center;
+    margin-top: 8rem;
+    line-height: 1.4rem;
+  }
+  .work_section .left_slide div a {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #15E587;
+  }
+  .work_section .right_slide {
+    position: absolute;
+    height: 100%;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(12.5px);
+            backdrop-filter: blur(12.5px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .work_section .right_slide div {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(12.5px);
+            backdrop-filter: blur(12.5px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .work_section .actions_button button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 4;
+    background-color: #15E587;
+    color: #222;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.9rem;
+    border: none;
+  }
+  .work_section .actions_button button:hover {
+    color: #fff;
+  }
+  .work_section .actions_button button:focus {
+    border: none;
+  }
+  .work_section .actions_button .down_button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .work_section .actions_button .up_button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .btn-down {
