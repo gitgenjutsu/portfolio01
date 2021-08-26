@@ -101,6 +101,63 @@
         }
     }
 
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 7rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: 1.7rem;
+                font-weight: 300;
+                line-height: 40px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: justify;
+                    }
+                }
+
+                .rightText {
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 600px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 480px;
+                            height: 430px;
+                        }
+
+                        a {
+                            text {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
     //sidebar
     .c-scrollbar {
         display: none;
@@ -173,6 +230,63 @@
             }
         }
     }
+
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 7rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: justify;
+                    }
+                }
+
+                .rightText {
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 410px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 410px;
+                            height: 430px;
+                        }
+
+                        a {
+                            text {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
 
     //sidebar
     .c-scrollbar {
@@ -247,6 +361,64 @@
         }
     }
 
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 7rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: justify;
+                    }
+                }
+
+                .rightText {
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 450px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 450px;
+                            height: 430px;
+                        }
+
+                        a {
+                            text {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
     //sidebar
     .c-scrollbar {
         display: none;
@@ -290,7 +462,7 @@
 
     //main text
     .main {
-        // min-height: 80vh;
+        padding: 40px 20px;
 
         //hero text
         .hero_text {
@@ -320,6 +492,61 @@
         }
     }
 
+    //about
+    .about_section {
+        &::before {
+            top: 80%;
+            left: 50%;
+            font-size: 5rem;
+        }
+
+        .about_parent {
+            grid-template-columns: repeat(1, 1fr);
+
+            .intro {
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 5.5px;
+                margin-bottom: 3rem;
+
+                .leftText {
+                    p:last-child {
+                        text-align: justify;
+                    }
+                }
+
+                .rightText {
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .myskills {
+                .skills_animate {
+                    width: 350px;
+                    height: 480px;
+
+                    svg {
+                        height: 430px;
+
+                        rect {
+                            width: 330px;
+                            height: 430px;
+                        }
+
+                        a {
+                            text {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
 
     //sidebar
@@ -408,7 +635,13 @@
 
                 .leftText {
                     p:last-child {
-                        text-align: left;
+                        text-align: justify;
+                    }
+                }
+
+                .rightText {
+                    p {
+                        text-align: justify;
                     }
                 }
             }
@@ -532,7 +765,13 @@
 
                 .leftText {
                     p:last-child {
-                        text-align: left;
+                        text-align: justify;
+                    }
+                }
+
+                .rightText {
+                    p {
+                        text-align: justify;
                     }
                 }
             }
