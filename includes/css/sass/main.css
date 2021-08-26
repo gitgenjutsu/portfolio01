@@ -1087,14 +1087,14 @@ li {
     text-align: left;
   }
   .about_section .about_parent .myskills .skills_animate {
-    width: 320px;
+    width: 280px;
     height: 480px;
   }
   .about_section .about_parent .myskills .skills_animate svg {
     height: 430px;
   }
   .about_section .about_parent .myskills .skills_animate svg rect {
-    width: 320px;
+    width: 280px;
     height: 430px;
   }
   .about_section .about_parent .myskills .skills_animate svg a text {
