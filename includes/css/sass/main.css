@@ -572,6 +572,42 @@ li {
     margin-left: 10px !important;
   }
 
+  .about_section::before {
+    top: 80%;
+    left: 50%;
+    font-size: 7rem;
+  }
+  .about_section .about_parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about_section .about_parent .intro {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 5.5px;
+    margin-bottom: 3rem;
+  }
+  .about_section .about_parent .intro .leftText p:last-child {
+    text-align: justify;
+  }
+  .about_section .about_parent .intro .rightText p {
+    text-align: justify;
+  }
+  .about_section .about_parent .myskills .skills_animate {
+    width: 600px;
+    height: 480px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg {
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg rect {
+    width: 480px;
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg a text {
+    font-size: 1.2rem;
+  }
+
   .c-scrollbar {
     display: none;
   }
@@ -616,6 +652,42 @@ li {
   }
   .main .hero_text h3:first-child {
     margin-left: 10px !important;
+  }
+
+  .about_section::before {
+    top: 80%;
+    left: 50%;
+    font-size: 7rem;
+  }
+  .about_section .about_parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about_section .about_parent .intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 5.5px;
+    margin-bottom: 3rem;
+  }
+  .about_section .about_parent .intro .leftText p:last-child {
+    text-align: justify;
+  }
+  .about_section .about_parent .intro .rightText p {
+    text-align: justify;
+  }
+  .about_section .about_parent .myskills .skills_animate {
+    width: 410px;
+    height: 480px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg {
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg rect {
+    width: 410px;
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg a text {
+    font-size: 0.9rem;
   }
 
   .c-scrollbar {
@@ -667,6 +739,42 @@ li {
     margin-left: 10px !important;
   }
 
+  .about_section::before {
+    top: 80%;
+    left: 50%;
+    font-size: 7rem;
+  }
+  .about_section .about_parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about_section .about_parent .intro {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 5.5px;
+    margin-bottom: 3rem;
+  }
+  .about_section .about_parent .intro .leftText p:last-child {
+    text-align: justify;
+  }
+  .about_section .about_parent .intro .rightText p {
+    text-align: justify;
+  }
+  .about_section .about_parent .myskills .skills_animate {
+    width: 450px;
+    height: 480px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg {
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg rect {
+    width: 450px;
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg a text {
+    font-size: 0.9rem;
+  }
+
   .c-scrollbar {
     display: none;
   }
@@ -692,6 +800,9 @@ li {
   }
 }
 @media (min-width: 440px) and (max-width: 480px) {
+  .main {
+    padding: 40px 20px;
+  }
   .main .hero_text {
     display: flex;
     flex-direction: column;
@@ -711,6 +822,42 @@ li {
   }
   .main .hero_text h3:first-child {
     margin-left: 10px !important;
+  }
+
+  .about_section::before {
+    top: 80%;
+    left: 50%;
+    font-size: 5rem;
+  }
+  .about_section .about_parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about_section .about_parent .intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 5.5px;
+    margin-bottom: 3rem;
+  }
+  .about_section .about_parent .intro .leftText p:last-child {
+    text-align: justify;
+  }
+  .about_section .about_parent .intro .rightText p {
+    text-align: justify;
+  }
+  .about_section .about_parent .myskills .skills_animate {
+    width: 350px;
+    height: 480px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg {
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg rect {
+    width: 330px;
+    height: 430px;
+  }
+  .about_section .about_parent .myskills .skills_animate svg a text {
+    font-size: 0.9rem;
   }
 
   .c-scrollbar {
@@ -774,7 +921,10 @@ li {
     margin-bottom: 3rem;
   }
   .about_section .about_parent .intro .leftText p:last-child {
-    text-align: left;
+    text-align: justify;
+  }
+  .about_section .about_parent .intro .rightText p {
+    text-align: justify;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 350px;
@@ -848,7 +998,10 @@ li {
     margin-bottom: 3rem;
   }
   .about_section .about_parent .intro .leftText p:last-child {
-    text-align: left;
+    text-align: justify;
+  }
+  .about_section .about_parent .intro .rightText p {
+    text-align: justify;
   }
   .about_section .about_parent .myskills .skills_animate {
     width: 350px;
