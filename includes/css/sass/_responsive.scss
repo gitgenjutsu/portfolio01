@@ -4,14 +4,6 @@
         display: none !important;
     }
 }
-@media (min-width: 992px) and (max-width: 1092px){
-    .work_section_sm {
-        display: none !important;
-    }
-    .work_section{
-        display: block !important;
-    }
-}
 //Large devices (Laptops, Desktops 992px and up)
 @media (min-width: 992px) and (max-width: 1200px) {
 
