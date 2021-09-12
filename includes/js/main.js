@@ -110,6 +110,7 @@ function done() {
 function show_index() {
     $('#hero_text').show('slow');
     $('.work_section').hide('slow');
+    $('.work_section_sm').hide('slow');
     $('.about_section').hide('slow');
     $('#scroll-down').show('slow');
     $('.work_menu').removeClass('active');
@@ -120,6 +121,7 @@ function show_index() {
 function show_about() {
     $('#hero_text').hide('slow');
     $('.work_section').hide('slow');
+    $('.work_section_sm').hide('slow');
     $('.about_section').show('slow');
     $('.about_menu').addClass('active');
     $('.work_menu').removeClass('active');
@@ -131,6 +133,7 @@ function show_work() {
     $('#hero_text').hide('slow');
     $('.about_section').hide('slow');
     $('.work_section').show('slow');
+    $('.work_section_sm').show('slow');
     $('.about_menu').removeClass('active');
     $('.work_menu').addClass('active');
     $('#scroll-down').hide('slow');
