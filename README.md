@@ -1,2 +1,2 @@
 # portfolio
-My personel portfolio website
+My personal portfolio website
